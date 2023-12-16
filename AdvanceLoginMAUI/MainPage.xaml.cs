@@ -61,7 +61,8 @@ namespace AdvanceLoginMAUI
 
         private void BtnRegistration_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new RegistrationPage(null));
+            User NewUser = new User();
+            Navigation.PushModalAsync(new RegistrationPage(NewUser));
         }
     }
 

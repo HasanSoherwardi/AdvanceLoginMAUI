@@ -50,21 +50,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiAsset Remove="Resources\Raw\man.png" />
-	</ItemGroup>
-
-
-	<ItemGroup>
-	  <None Remove="Resources\Images\Home.png" />
-	  <None Remove="Resources\Images\man.png" />
-	  <None Remove="Resources\Images\PinkFlag.png" />
-	  <None Remove="Resources\Images\user.png" />
-	  <None Remove="Resources\Raw\man.png" />
-	  <None Remove="Resources\Splash\logo.jpeg" />
-	  <None Remove="Resources\Splash\splash.svg" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiIcon Include="Resources\AppIcon\pinkflag.png" />
 	</ItemGroup>
 
@@ -81,8 +66,6 @@
 		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-		<PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
-		<PackageReference Include="Xam.Plugin.Media" Version="6.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>

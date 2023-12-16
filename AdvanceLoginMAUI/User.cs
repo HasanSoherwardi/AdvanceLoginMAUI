@@ -1,4 +1,4 @@
-﻿using SQLite;
+﻿using System.ComponentModel.DataAnnotations;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,22 +7,28 @@ namespace AdvanceLoginMAUI
 {
     public class User
     {
-        [PrimaryKey, AutoIncrement]
+        [Key]
         public int id { get; set; }
-        [NotNull]
+        
+        [Required]
         public string Name { get; set; }
-        [NotNull]
+        
+        [Required]
         public DateTime DOB { get; set; }
-        [NotNull]
+        
+        [Required]
         public string POB { get; set; }
-        [NotNull]
+        
+        [Required]
         public string Email { get; set; }
-        [NotNull]
-        [Unique]
+        
+        [Required]
         public string UserId { get; set; }
-        [NotNull]
+        
+        [Required]
         public string Password { get; set; }
-
+        
+        [Required]
         public byte[] myArray { get; set; }
     }
 }

@@ -1,5 +1,4 @@
-﻿using SQLite;
-
+﻿
 namespace AdvanceLoginMAUI
 {
     public partial class App : Application
@@ -8,7 +7,6 @@ namespace AdvanceLoginMAUI
         {
             InitializeComponent();
 
-          //  SQLiteConnection con = DependencyService.Get<SQLiteInterface>().GetConnectionWithDatabase();
             MainPage = new AppShell();
         }
     }

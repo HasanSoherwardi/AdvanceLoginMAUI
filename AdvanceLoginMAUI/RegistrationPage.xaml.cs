@@ -1,13 +1,11 @@
 
 using Newtonsoft.Json;
-using Plugin.Media;
 using System;
 using Microsoft.Maui.Storage;
 using System.IO;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text;
-using static SQLite.SQLite3;
 using System.Text.RegularExpressions;
 
 namespace AdvanceLoginMAUI;
@@ -19,7 +17,7 @@ public partial class RegistrationPage : ContentPage
 	{
         InitializeComponent();
 
-        if (user != null)
+        if (user.id > 0)
         {     
                 UserDetails = user;
                 PopulateDetails(UserDetails);   
@@ -56,7 +54,6 @@ public partial class RegistrationPage : ContentPage
         SaveBtn.Text = "Update";
         this.Title = "Edit Info";
     }
-
 
     private async void SaveBtn_Clicked(object sender, EventArgs e)
     {
